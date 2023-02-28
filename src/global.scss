@@ -1,0 +1,207 @@
+@font-face {
+  font-family: 'Pretendard-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Core CSS required for Ionic components to work properly */
+@import "~@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import '~@ionic/angular/css/display.css';
+
+/* Optional CSS utils that can be commented out */
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+
+:root {
+  --ion-font-family: 'Pretendard-Regular';
+	--ion-color-custom: #7623ff;
+	--ion-color-custom-rgb: 118,35,255;
+	--ion-color-custom-contrast: #ffffff;
+	--ion-color-custom-contrast-rgb: 255,255,255;
+	--ion-color-custom-shade: #681fe0;
+	--ion-color-custom-tint: #8439ff;
+
+  --ion-color-custompale: #E2DEFF;
+	--ion-color-custompale-rgb: 226,222,255;
+	--ion-color-custompale-contrast: #000;
+	--ion-color-custompale-contrast-rgb: 0,0,0;
+	--ion-color-custompale-shade: #E2DEFF;
+	--ion-color-custompale-tint: #E2DEFF;
+
+  --base-color: #E8E8E8;
+  // --middle-purple-color: #E2DEFF;
+  // --middle-red-color: #FFD9DF;
+  // --middle-yellow-color: #FFF1C4;
+  --middle-purple-color: #C9BFFF;
+  --middle-red-color: #FFC9D1;
+  --middle-yellow-color: #FFF0BE;
+  --high-color: #211A49;
+  --active-color: #7623ff;
+  --active-light-color: #7600FF;
+
+  --red-color: rgb(237, 41, 41);
+  --dark-gray-color: #8A94A0;
+  --gray-color: #cccbcb;
+  --gray-pale-color: #eeeeee;
+
+  --keyword-color: #B5C7FF;
+  --keyword-first-color: #FFACEF;
+}
+
+.ion-color-custom {
+	--ion-color-base: var(--ion-color-custom);
+	--ion-color-base-rgb: var(--ion-color-custom-rgb);
+	--ion-color-contrast: var(--ion-color-custom-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-custom-contrast-rgb);
+	--ion-color-shade: var(--ion-color-custom-shade);
+	--ion-color-tint: var(--ion-color-custom-tint);
+}
+
+.ion-color-custompale {
+	--ion-color-base: var(--ion-color-custompale);
+	--ion-color-base-rgb: var(--ion-color-custompale-rgb);
+	--ion-color-contrast: var(--ion-color-custompale-contrast);
+	--ion-color-contrast-rgb: var(--ion-color-custompale-contrast-rgb);
+	--ion-color-shade: var(--ion-color-custompale-shade);
+	--ion-color-tint: var(--ion-color-custompale-tint);
+}
+
+
+@mixin btn-xs() {
+  font-size: 11px;
+  width: 70px;
+  height: 30px;
+};
+@mixin btn-sm() {
+  font-size: 13px;
+  width: 80px;
+  height: 30px;
+};
+@mixin btn-md() {
+  font-size: 15px;
+  width: 100px;
+  height: 36px;
+};
+@mixin btn-lg() {
+  font-size: 15px;
+  width: 120px;
+  height: 44px;
+};
+@mixin btn-xl() {
+  width: 55px;
+  height: 55px;
+};
+
+.recordingModal,
+.writingModal {
+  --border-radius: 30px;
+  --width: 90%;
+  &::part(backdrop) {
+      background: #000;
+  }
+
+  &::part(handle) {
+    display: none;
+      // width: 150px;
+      // height: 6px;
+  }
+
+  &::part(content) {
+    --overflow: hidden;
+  }
+}
+.diaryBtns > ion-button.diaryBtn {
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+ion-button[shape=circle] {
+  --border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  &[size=large] {
+    width: 56px;
+    height: 56px;
+  }
+}
+.calToggleRow {
+  ion-icon {
+    font-size: 20px;
+  }
+}
+
+ion-popover {
+  --width: 90%;
+  --max-width: 310px;
+}
+.keywordBadges ion-badge {
+  --padding-top: 10px;
+  --padding-bottom: 10px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+}
+ion-content {
+  // overwrite inline styles
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.item-has-focus {
+  --highlight-background: var(--middle-purple-color);
+  ion-label {
+    color: var(--ion-color-secondary) !important;
+  }
+}
+ion-item#diary {
+  &::part(native) {
+
+    caret-color: black;
+  }
+  // --highlight-height: 2px;
+  // --highlight-color-focused: var(--middle-purple-color);
+}
+
+.journalToast::part(message) { text-align: center; }
+
+.dFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marginAuto {
+  margin: auto;
+}
+
+.w100 {
+  width: 100%;
+}
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.customBtn {
+  border: none;
+  background-color: transparent;
+  padding: 10px 15px;
+  margin: 0 5px;
+}
+.customBtn:hover {
+  // padding: 20px 20px;
+  border-radius: 50%;
+  font-weight: 900;
+}
+
+.textBlack {
+  color: black;
+}

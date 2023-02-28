@@ -1,0 +1,42 @@
+span.w100 {
+  display: block;
+  text-align: right;
+}
+.closeBtn {
+  margin-top: -5px;
+  padding: 0;
+  &:hover {
+    color: var(--red-color);
+  }
+}
+.mainDiv {
+  display: flex;
+  justify-content: space-between;
+  // align-items: center;
+  .inputDiv {
+    width: 100%;
+    p {
+      margin: 0;
+      padding-left: 8px;
+      font-size: 14px;
+      color: var(--dark-gray-color);
+    }
+  }
+  .customBtn {
+    width: 60px;
+    padding: 10px 5px;
+    margin: 0;
+    &:hover {
+      color: var(--active-color);
+    }
+  }
+}
+ion-input {
+  border: 1px solid transparent;
+  border-radius: 15px;
+}
+ion-input:focus-within {
+  border-color: var(--middle-purple-color);
+  color: black;
+}
+

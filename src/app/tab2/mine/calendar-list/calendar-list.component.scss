@@ -1,0 +1,102 @@
+.dayContainer {
+  padding-bottom: 60px;
+}
+
+.mainContent {
+  height: 70px;
+  max-height: 70px;
+  ion-row {
+    width: 100%;
+    // overflow: hidden;
+    // white-space: nowrap;
+    // text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+
+
+  }
+}
+ion-card-subtitle {
+  display: flex;
+  justify-content: space-between;
+}
+// .cardOpt {
+//   padding-right: 16px;
+//   display: inline-block;
+//   ion-img {
+//     width: 20px;
+//     display: inline-block;
+//     margin-left: 3px;
+//   }
+// }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // height: 100%;
+  color: black;
+  ion-button {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    &:hover {
+      color: var(--active-color);
+    }
+    &.activateBtn {
+      background-color: var(--middle-purple-color);
+      color: var(--active-color);
+    }
+    &.trashBtn:hover {
+      color: var(--red-color);
+    }
+  }
+}
+.keywordsContainer {
+  // display: inline-block;
+  // width: 150px;
+  // height: 21px;
+  // overflow: hidden;
+  // white-space: nowrap;
+  // text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.keywords {
+  color: var(--active-light-color);
+}
+.imgContainer {
+  width: 65px;
+  aspect-ratio: 1 / 1;
+  margin: auto;
+  background-color: #f7f7f7;
+  border-radius: 50%;
+}
+
+.singleContainer {
+  border-radius: 0%;
+  background-color: transparent;
+  background-position:center center;
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+.doubleContainer {
+  border-radius: 0%;
+  background-color: transparent;
+  background-position: left top, right bottom;
+  background-repeat:no-repeat, no-repeat;
+  background-size: 65% 65%, 65% 65%;
+}
+.tripleContainer {
+  border-radius: 0%;
+  background-color: transparent;
+  background-position: left bottom,center top, right bottom;
+  background-repeat:no-repeat, no-repeat, no-repeat;
+  background-size: 57% 57%, 57% 57%, 57% 57%;
+  color: transparent;
+}

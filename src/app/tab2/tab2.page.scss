@@ -1,0 +1,19 @@
+.colTab  {
+  border-bottom: 3px solid var(--base-color);
+  border-radius: 15px 15px 0 0;
+  &.activeTab:not([disabled]) {
+    p {
+      // z-index: 2;
+      color: var(--active-color);
+    }
+    // background-color: var(--middle-purple-color);
+    border-color: var(--active-color);
+  }
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    background-color: transparent;
+    display: block;
+    margin: auto;
+  }
+}

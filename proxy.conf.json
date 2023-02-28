@@ -1,0 +1,20 @@
+{
+  "/api": {
+    "target": "https://exp.finger.solutions/seamapi/",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": {"^/api" : ""}
+  },
+  "/recording": {
+    "target": "http://192.168.31.35:8000/",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": {"^/recording" : ""}
+  },
+  "/test": {
+    "target": "https://192.168.31.35/",
+    "changeOrigin": true,
+    "secure": false,
+    "pathRewrite": {"^/test" : ""}
+  }
+}
